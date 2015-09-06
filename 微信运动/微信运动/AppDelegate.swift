@@ -8,7 +8,7 @@
 
 import UIKit
 
-let LouzaiWXCode = "wx591c0178c80b80e7"
+let WalkWXCode = "wxa365243c22df433a"
 let AppDownload = "http://pre.im/cctv"
 let FollowMyWeChat = "http://weixin.qq.com/r/mkyguMHEb5wQrYXb9xmI"
 let shareCancelNotification = "ShareCancelNotification"
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         UINavigationBar.appearance().barStyle = UIBarStyle.Black
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        WXApi.registerApp(LouzaiWXCode)
+        WXApi.registerApp(WalkWXCode)
         return true
     }
 

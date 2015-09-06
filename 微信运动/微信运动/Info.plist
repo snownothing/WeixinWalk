@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>Lou</string>
+			<string>Walk</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx591c0178c80b80e7</string>
+				<string>wxa365243c22df433a</string>
 			</array>
 		</dict>
 	</array>

@@ -9,14 +9,6 @@
 import UIKit
 import HealthKit
 
-extension Int {
-    var day: NSTimeInterval {
-        let DAY_IN_SECONDS = 60 * 60 * 24
-        let day:Double = Double(DAY_IN_SECONDS) * Double(self)
-        return day
-    }
-}
-
 class HealthManager: NSObject {
     
     let healthKitStore = HKHealthStore()

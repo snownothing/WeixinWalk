@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0D0AC71B9B3E760035E3E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0AC61B9B3E760035E3E8 /* AppDelegate.swift */; };
+		BB0D0AC91B9B3E760035E3E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0AC81B9B3E760035E3E8 /* MainViewController.swift */; };
+		BB0D0ACC1B9B3E760035E3E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D0ACA1B9B3E760035E3E8 /* Main.storyboard */; };
+		BB0D0ACE1B9B3E760035E3E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0D0ACD1B9B3E760035E3E8 /* Assets.xcassets */; };
+		BB0D0AD11B9B3E760035E3E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D0ACF1B9B3E760035E3E8 /* LaunchScreen.storyboard */; };
+		BB0D0ADC1B9B3E760035E3E8 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0ADB1B9B3E760035E3E8 /* ____Tests.swift */; };
+		BB0D0AE71B9B3E760035E3E8 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0AE61B9B3E760035E3E8 /* ____UITests.swift */; };
+		BB6A55E91B9B3EEE00EB6414 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A55E81B9B3EEE00EB6414 /* HealthKit.framework */; };
+		BB6A55EB1B9B3F3900EB6414 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A55EA1B9B3F3900EB6414 /* HealthManager.swift */; };
+		BB6A55ED1B9B4BB600EB6414 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A55EC1B9B4BB600EB6414 /* PageViewController.swift */; };
+		BB6A55EF1B9B4D0F00EB6414 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A55EE1B9B4D0F00EB6414 /* PageContentViewController.swift */; };
+		BB6A55F71B9BDC4D00EB6414 /* lWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A55F31B9BDC4D00EB6414 /* lWeChatSDK.a */; };
+		BB6A55F81B9BDC4D00EB6414 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB6A55F41B9BDC4D00EB6414 /* read_me.txt */; };
+		BB6A55FA1B9BDDCD00EB6414 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A55F91B9BDDCD00EB6414 /* SystemConfiguration.framework */; };
+		BB6A55FC1B9BDDF700EB6414 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A55FB1B9BDDF700EB6414 /* libz.1.dylib */; };
+		BB6A55FE1B9BDE2100EB6414 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A55FD1B9BDE2100EB6414 /* libsqlite3.dylib */; };
+		BB6A56021B9BE17100EB6414 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6A56011B9BE17100EB6414 /* libc++.1.dylib */; };
+		BB6A56051B9BF77600EB6414 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A56041B9BF77600EB6414 /* HRToast+UIView.swift */; };
+		BB6A56071B9C0BDC00EB6414 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A56061B9C0BDC00EB6414 /* AboutViewController.swift */; };
+		BB6A560A1B9C0E5200EB6414 /* QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A56091B9C0E5200EB6414 /* QRCode.m */; };
+		BB6A560C1B9C11D200EB6414 /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A560B1B9C11D100EB6414 /* EasterEggViewController.swift */; };
+		BB6A560E1B9C18C700EB6414 /* Breath and Life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6A560D1B9C18C700EB6414 /* Breath and Life.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0D0AD81B9B3E760035E3E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0D0ABB1B9B3E760035E3E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0D0AC21B9B3E760035E3E8;
+			remoteInfo = "微信运动";
+		};
+		BB0D0AE31B9B3E760035E3E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0D0ABB1B9B3E760035E3E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0D0AC21B9B3E760035E3E8;
+			remoteInfo = "微信运动";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB0D0AC31B9B3E760035E3E8 /* 微信运动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信运动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0D0AC61B9B3E760035E3E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB0D0AC81B9B3E760035E3E8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BB0D0ACB1B9B3E760035E3E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB0D0ACD1B9B3E760035E3E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0D0AD01B9B3E760035E3E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB0D0AD21B9B3E760035E3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0D0AD71B9B3E760035E3E8 /* 微信运动Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信运动Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0D0ADB1B9B3E760035E3E8 /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
+		BB0D0ADD1B9B3E760035E3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0D0AE21B9B3E760035E3E8 /* 微信运动UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信运动UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0D0AE61B9B3E760035E3E8 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
+		BB0D0AE81B9B3E760035E3E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6A55E71B9B3EEE00EB6414 /* 微信运动.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "微信运动.entitlements"; sourceTree = "<group>"; };
+		BB6A55E81B9B3EEE00EB6414 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BB6A55EA1B9B3F3900EB6414 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		BB6A55EC1B9B4BB600EB6414 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		BB6A55EE1B9B4D0F00EB6414 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		BB6A55F31B9BDC4D00EB6414 /* lWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lWeChatSDK.a; sourceTree = "<group>"; };
+		BB6A55F41B9BDC4D00EB6414 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		BB6A55F51B9BDC4D00EB6414 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		BB6A55F61B9BDC4D00EB6414 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		BB6A55F91B9BDDCD00EB6414 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB6A55FB1B9BDDF700EB6414 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		BB6A55FD1B9BDE2100EB6414 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		BB6A56011B9BE17100EB6414 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "/usr/lib/libc++.1.dylib"; sourceTree = "<absolute>"; };
+		BB6A56041B9BF77600EB6414 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		BB6A56061B9C0BDC00EB6414 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BB6A56081B9C0E5200EB6414 /* QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		BB6A56091B9C0E5200EB6414 /* QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCode.m; sourceTree = "<group>"; };
+		BB6A560B1B9C11D100EB6414 /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasterEggViewController.swift; sourceTree = "<group>"; };
+		BB6A560D1B9C18C700EB6414 /* Breath and Life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breath and Life.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0D0AC01B9B3E760035E3E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6A56021B9BE17100EB6414 /* libc++.1.dylib in Frameworks */,
+				BB6A55FE1B9BDE2100EB6414 /* libsqlite3.dylib in Frameworks */,
+				BB6A55FC1B9BDDF700EB6414 /* libz.1.dylib in Frameworks */,
+				BB6A55FA1B9BDDCD00EB6414 /* SystemConfiguration.framework in Frameworks */,
+				BB6A55F71B9BDC4D00EB6414 /* lWeChatSDK.a in Frameworks */,
+				BB6A55E91B9B3EEE00EB6414 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0AD41B9B3E760035E3E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0ADF1B9B3E760035E3E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0D0ABA1B9B3E760035E3E8 = {
+			isa = PBXGroup;
+			children = (
+				BB6A56031B9BF73900EB6414 /* Framework */,
+				BB0D0AC51B9B3E760035E3E8 /* 微信运动 */,
+				BB0D0ADA1B9B3E760035E3E8 /* 微信运动Tests */,
+				BB0D0AE51B9B3E760035E3E8 /* 微信运动UITests */,
+				BB0D0AC41B9B3E760035E3E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0D0AC41B9B3E760035E3E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D0AC31B9B3E760035E3E8 /* 微信运动.app */,
+				BB0D0AD71B9B3E760035E3E8 /* 微信运动Tests.xctest */,
+				BB0D0AE21B9B3E760035E3E8 /* 微信运动UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB0D0AC51B9B3E760035E3E8 /* 微信运动 */ = {
+			isa = PBXGroup;
+			children = (
+				BB6A55F21B9BDC4D00EB6414 /* WeChatSDK_1.5 */,
+				BB6A55E71B9B3EEE00EB6414 /* 微信运动.entitlements */,
+				BB0D0AC61B9B3E760035E3E8 /* AppDelegate.swift */,
+				BB0D0AC81B9B3E760035E3E8 /* MainViewController.swift */,
+				BB0D0ACA1B9B3E760035E3E8 /* Main.storyboard */,
+				BB0D0ACD1B9B3E760035E3E8 /* Assets.xcassets */,
+				BB0D0ACF1B9B3E760035E3E8 /* LaunchScreen.storyboard */,
+				BB0D0AD21B9B3E760035E3E8 /* Info.plist */,
+				BB6A55EA1B9B3F3900EB6414 /* HealthManager.swift */,
+				BB6A55EC1B9B4BB600EB6414 /* PageViewController.swift */,
+				BB6A55EE1B9B4D0F00EB6414 /* PageContentViewController.swift */,
+				BB6A56041B9BF77600EB6414 /* HRToast+UIView.swift */,
+				BB6A56061B9C0BDC00EB6414 /* AboutViewController.swift */,
+				BB6A560B1B9C11D100EB6414 /* EasterEggViewController.swift */,
+				BB6A560D1B9C18C700EB6414 /* Breath and Life.mp3 */,
+			);
+			path = "微信运动";
+			sourceTree = "<group>";
+		};
+		BB0D0ADA1B9B3E760035E3E8 /* 微信运动Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D0ADB1B9B3E760035E3E8 /* ____Tests.swift */,
+				BB0D0ADD1B9B3E760035E3E8 /* Info.plist */,
+			);
+			path = "微信运动Tests";
+			sourceTree = "<group>";
+		};
+		BB0D0AE51B9B3E760035E3E8 /* 微信运动UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB0D0AE61B9B3E760035E3E8 /* ____UITests.swift */,
+				BB0D0AE81B9B3E760035E3E8 /* Info.plist */,
+			);
+			path = "微信运动UITests";
+			sourceTree = "<group>";
+		};
+		BB6A55F21B9BDC4D00EB6414 /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				BB6A56081B9C0E5200EB6414 /* QRCode.h */,
+				BB6A56091B9C0E5200EB6414 /* QRCode.m */,
+				BB6A55F31B9BDC4D00EB6414 /* lWeChatSDK.a */,
+				BB6A55F41B9BDC4D00EB6414 /* read_me.txt */,
+				BB6A55F51B9BDC4D00EB6414 /* WXApi.h */,
+				BB6A55F61B9BDC4D00EB6414 /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
+		BB6A56031B9BF73900EB6414 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BB6A56011B9BE17100EB6414 /* libc++.1.dylib */,
+				BB6A55FD1B9BDE2100EB6414 /* libsqlite3.dylib */,
+				BB6A55FB1B9BDDF700EB6414 /* libz.1.dylib */,
+				BB6A55F91B9BDDCD00EB6414 /* SystemConfiguration.framework */,
+				BB6A55E81B9B3EEE00EB6414 /* HealthKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0D0AC21B9B3E760035E3E8 /* 微信运动 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0D0AEB1B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动" */;
+			buildPhases = (
+				BB0D0ABF1B9B3E760035E3E8 /* Sources */,
+				BB0D0AC01B9B3E760035E3E8 /* Frameworks */,
+				BB0D0AC11B9B3E760035E3E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "微信运动";
+			productName = "微信运动";
+			productReference = BB0D0AC31B9B3E760035E3E8 /* 微信运动.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB0D0AD61B9B3E760035E3E8 /* 微信运动Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0D0AEE1B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动Tests" */;
+			buildPhases = (
+				BB0D0AD31B9B3E760035E3E8 /* Sources */,
+				BB0D0AD41B9B3E760035E3E8 /* Frameworks */,
+				BB0D0AD51B9B3E760035E3E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0D0AD91B9B3E760035E3E8 /* PBXTargetDependency */,
+			);
+			name = "微信运动Tests";
+			productName = "微信运动Tests";
+			productReference = BB0D0AD71B9B3E760035E3E8 /* 微信运动Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB0D0AE11B9B3E760035E3E8 /* 微信运动UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0D0AF11B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动UITests" */;
+			buildPhases = (
+				BB0D0ADE1B9B3E760035E3E8 /* Sources */,
+				BB0D0ADF1B9B3E760035E3E8 /* Frameworks */,
+				BB0D0AE01B9B3E760035E3E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0D0AE41B9B3E760035E3E8 /* PBXTargetDependency */,
+			);
+			name = "微信运动UITests";
+			productName = "微信运动UITests";
+			productReference = BB0D0AE21B9B3E760035E3E8 /* 微信运动UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0D0ABB1B9B3E760035E3E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Eular;
+				TargetAttributes = {
+					BB0D0AC21B9B3E760035E3E8 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 952J324HNJ;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					BB0D0AD61B9B3E760035E3E8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BB0D0AC21B9B3E760035E3E8;
+					};
+					BB0D0AE11B9B3E760035E3E8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BB0D0AC21B9B3E760035E3E8;
+					};
+				};
+			};
+			buildConfigurationList = BB0D0ABE1B9B3E760035E3E8 /* Build configuration list for PBXProject "微信运动" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB0D0ABA1B9B3E760035E3E8;
+			productRefGroup = BB0D0AC41B9B3E760035E3E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0D0AC21B9B3E760035E3E8 /* 微信运动 */,
+				BB0D0AD61B9B3E760035E3E8 /* 微信运动Tests */,
+				BB0D0AE11B9B3E760035E3E8 /* 微信运动UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0D0AC11B9B3E760035E3E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6A560E1B9C18C700EB6414 /* Breath and Life.mp3 in Resources */,
+				BB0D0AD11B9B3E760035E3E8 /* LaunchScreen.storyboard in Resources */,
+				BB0D0ACE1B9B3E760035E3E8 /* Assets.xcassets in Resources */,
+				BB0D0ACC1B9B3E760035E3E8 /* Main.storyboard in Resources */,
+				BB6A55F81B9BDC4D00EB6414 /* read_me.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0AD51B9B3E760035E3E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0AE01B9B3E760035E3E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0D0ABF1B9B3E760035E3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0D0AC91B9B3E760035E3E8 /* MainViewController.swift in Sources */,
+				BB6A560C1B9C11D200EB6414 /* EasterEggViewController.swift in Sources */,
+				BB6A560A1B9C0E5200EB6414 /* QRCode.m in Sources */,
+				BB6A55EB1B9B3F3900EB6414 /* HealthManager.swift in Sources */,
+				BB6A56051B9BF77600EB6414 /* HRToast+UIView.swift in Sources */,
+				BB6A56071B9C0BDC00EB6414 /* AboutViewController.swift in Sources */,
+				BB6A55EF1B9B4D0F00EB6414 /* PageContentViewController.swift in Sources */,
+				BB0D0AC71B9B3E760035E3E8 /* AppDelegate.swift in Sources */,
+				BB6A55ED1B9B4BB600EB6414 /* PageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0AD31B9B3E760035E3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0D0ADC1B9B3E760035E3E8 /* ____Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0D0ADE1B9B3E760035E3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0D0AE71B9B3E760035E3E8 /* ____UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0D0AD91B9B3E760035E3E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0D0AC21B9B3E760035E3E8 /* 微信运动 */;
+			targetProxy = BB0D0AD81B9B3E760035E3E8 /* PBXContainerItemProxy */;
+		};
+		BB0D0AE41B9B3E760035E3E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0D0AC21B9B3E760035E3E8 /* 微信运动 */;
+			targetProxy = BB0D0AE31B9B3E760035E3E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB0D0ACA1B9B3E760035E3E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0D0ACB1B9B3E760035E3E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB0D0ACF1B9B3E760035E3E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0D0AD01B9B3E760035E3E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB0D0AE91B9B3E760035E3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		BB0D0AEA1B9B3E760035E3E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		BB0D0AEC1B9B3E760035E3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "微信运动/微信运动.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "微信运动/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.weixinwalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "微信运动/WeChatSDK_1.5/WXApi.h";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		BB0D0AED1B9B3E760035E3E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "微信运动/微信运动.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "微信运动/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.weixinwalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "微信运动/WeChatSDK_1.5/WXApi.h";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		BB0D0AEF1B9B3E760035E3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "微信运动Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信运动.app/微信运动";
+			};
+			name = Debug;
+		};
+		BB0D0AF01B9B3E760035E3E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "微信运动Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信运动.app/微信运动";
+			};
+			name = Release;
+		};
+		BB0D0AF21B9B3E760035E3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "微信运动UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "微信运动";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BB0D0AF31B9B3E760035E3E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "微信运动UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "微信运动";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0D0ABE1B9B3E760035E3E8 /* Build configuration list for PBXProject "微信运动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0D0AE91B9B3E760035E3E8 /* Debug */,
+				BB0D0AEA1B9B3E760035E3E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0D0AEB1B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0D0AEC1B9B3E760035E3E8 /* Debug */,
+				BB0D0AED1B9B3E760035E3E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0D0AEE1B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0D0AEF1B9B3E760035E3E8 /* Debug */,
+				BB0D0AF01B9B3E760035E3E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0D0AF11B9B3E760035E3E8 /* Build configuration list for PBXNativeTarget "微信运动UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0D0AF21B9B3E760035E3E8 /* Debug */,
+				BB0D0AF31B9B3E760035E3E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0D0ABB1B9B3E760035E3E8 /* Project object */;
+}

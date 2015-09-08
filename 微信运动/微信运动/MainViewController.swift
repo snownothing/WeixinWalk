@@ -23,6 +23,8 @@ class MainViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        navigationItem.rightBarButtonItems = nil
+        
         // 引导页
         let defaults = NSUserDefaults.standardUserDefaults()
         let hasViewedWalkthrough = defaults.boolForKey("hasViewedWalkthrough")

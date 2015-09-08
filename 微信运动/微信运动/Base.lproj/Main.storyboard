@@ -363,9 +363,6 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uv5-Rk-bwi">
                                 <rect key="frame" x="558" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="oHm-uI-ygv" kind="show" id="lYw-f0-p1f"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -373,6 +370,7 @@
                         <outlet property="longPressGesture" destination="hII-ty-FSg" id="qia-7P-0jw"/>
                         <outlet property="stepsLabel" destination="p0f-el-nPU" id="zpv-yL-EbA"/>
                         <segue destination="XSL-fE-7Eh" kind="show" identifier="easterEggSegue" id="VNo-Ud-nVY"/>
+                        <segue destination="oHm-uI-ygv" kind="show" identifier="ShowAbout" id="80M-Hq-tYi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yz6-sV-DOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -382,7 +380,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1197" y="271"/>
+            <point key="canvasLocation" x="1255" y="266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YwI-KB-drZ">

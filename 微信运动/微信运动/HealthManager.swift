@@ -23,7 +23,7 @@ class HealthManager: NSObject {
         ]
         
         if !HKHealthStore.isHealthDataAvailable() {
-            let error = NSError(domain: "com.eular.weixinwalk", code: 2, userInfo: [NSLocalizedDescriptionKey:"HealthKit is not available in this Device"])
+            let error = NSError(domain: "com.foobar.weixinwalk", code: 2, userInfo: [NSLocalizedDescriptionKey:"HealthKit is not available in this Device"])
             if completion != nil {
                 completion(success: false, error: error)
             }

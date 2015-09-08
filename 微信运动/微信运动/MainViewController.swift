@@ -12,6 +12,9 @@ class MainViewController: UITableViewController {
     
     @IBOutlet weak var stepsLabel: UILabel!
     
+    @IBOutlet var longPressGesture: UILongPressGestureRecognizer!
+    
+    
     let healthManager = HealthManager()
     var scene = WXSceneSession.rawValue
     var egg_count = 0
@@ -90,6 +93,8 @@ class MainViewController: UITableViewController {
         self.view.makeToast(message: "分享作弊被我发现啦！", duration: 2, position: "center")
     }
     
+    
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
@@ -105,11 +110,6 @@ class MainViewController: UITableViewController {
                 scene = WXSceneSession.rawValue
             default:
                 break
-        }
-        
-        if egg_count == 10 {
-            egg_count = 0
-            self.performSegueWithIdentifier("easterEggSegue", sender: nil)
         }
         
         if share {
@@ -128,13 +128,17 @@ class MainViewController: UITableViewController {
             req.message = message
             req.scene = Int32(scene)
             WXApi.sendReq(req)
+        } else {
+            self.view.makeToast(message: "哈哈，想装逼被我发现啦", duration: 2, position: "center")
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func handleLongPressGesture(sender: UILongPressGestureRecognizer) {
+        if (sender.state == .Ended) {
+            self.performSegueWithIdentifier("easterEggSegue", sender: nil)
+        }
     }
+    
 
 
 }

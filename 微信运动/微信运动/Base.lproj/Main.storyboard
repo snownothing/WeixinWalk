@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N0J-70-8Hj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N0J-70-8Hj">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -272,9 +272,13 @@
                                                 <constraint firstItem="p0f-el-nPU" firstAttribute="top" secondItem="5aI-4S-eUo" secondAttribute="topMargin" constant="4" id="1F8-cE-jck"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="p0f-el-nPU" secondAttribute="trailing" constant="33" id="ns1-8T-njR"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hII-ty-FSg" appends="YES" id="W92-a5-ZqV"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="rSv-hv-DwP">
                                         <rect key="frame" x="0.0" y="108" width="600" height="44"/>
@@ -366,11 +370,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="longPressGesture" destination="hII-ty-FSg" id="qia-7P-0jw"/>
                         <outlet property="stepsLabel" destination="p0f-el-nPU" id="zpv-yL-EbA"/>
                         <segue destination="XSL-fE-7Eh" kind="show" identifier="easterEggSegue" id="VNo-Ud-nVY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yz6-sV-DOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="4" id="hII-ty-FSg">
+                    <connections>
+                        <action selector="handleLongPressGesture:" destination="QhR-XH-MKV" id="5P6-g2-Hhd"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1197" y="271"/>
         </scene>

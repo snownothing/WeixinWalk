@@ -28,7 +28,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         do {
             avPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Breath and Life", ofType: "mp3")!))
             avPlayer.play()
-        } catch {}
+        } catch {
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
